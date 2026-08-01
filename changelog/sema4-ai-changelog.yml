@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+source: https://sema4.ai/docs/release-notes
+scheme: product-version + dated release notes
+current_version: '2.5'
+docs: https://sema4.ai/docs/release-notes
+note: >-
+  Sema4.ai publishes dated Release Notes in its docs (per-edition). The docs are
+  continuously updated; the platform REST API is at v2 and the product at version
+  2.5. A structured recent-entries list is not machine-published as a changelog
+  feed, so only the current version and the docs source are captured here rather
+  than fabricated entries.
+entries: []

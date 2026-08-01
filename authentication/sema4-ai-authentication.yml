@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://sema4.ai/docs/v2/api + https://sema4.ai/docs/work-item-api
+docs: https://sema4.ai/docs/v2/api/api-keys
+summary:
+  types: [http, openIdConnect]
+  api_key_in: [header]
+  scheme: bearer
+schemes:
+- name: apiKeyBearer
+  type: http
+  scheme: bearer
+  description: >-
+    The Sema4.ai REST API (v2) and Work Item API (v1) authenticate with a
+    platform API key sent as a bearer token: `Authorization: Bearer YOUR_API_KEY`.
+    API keys are created and managed in the application under Configuration >
+    API Keys (Control Room), scoped per Workspace, and shown only once at creation.
+  header: Authorization
+  format: Bearer <api_key>
+  sources: [docs]
+- name: snowflakeToken
+  type: http
+  scheme: bearer
+  description: >-
+    Team Edition running as a Snowflake Native App accepts a Snowflake token:
+    `Authorization: Snowflake Token="<token>"`.
+  sources: [docs]
+- name: oidc
+  type: openIdConnect
+  description: >-
+    The platform exposes an OIDC surface (see /api/v2/oidc) for enterprise SSO
+    identity integration; used for user authentication into Control Room / Work Room.
+  sources: [docs]
+notes: >-
+  The GET on the API base (`/api/v2`) returns the deployment's OpenAPI spec with
+  no API key required; all other endpoints require the bearer API key.

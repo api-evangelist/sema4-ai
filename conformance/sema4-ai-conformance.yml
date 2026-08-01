@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: derived
+source: https://sema4.ai/docs/v2/api
+standards:
+- id: openapi
+  conforms: true
+  evidence: Deployment serves a machine-readable OpenAPI spec at GET /api/v2; Action Server generates OpenAPI from Python type hints.
+- id: mcp
+  conforms: true
+  evidence: Action Server and platform expose Model Context Protocol endpoints (/mcp, /api/v2/mcp).
+- id: oauth2-bearer
+  conforms: true
+  evidence: API authenticates with a bearer API key in the Authorization header.
+- id: openid-connect
+  conforms: true
+  evidence: Platform exposes an OIDC surface (/api/v2/oidc) for enterprise SSO.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors use standard HTTP status codes, not application/problem+json.
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: Publishes /.well-known/security.txt with Contact/Policy/Encryption.

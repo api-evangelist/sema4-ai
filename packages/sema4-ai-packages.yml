@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/user/sema4ai/ + https://github.com/Sema4AI
+packages:
+- language: python
+  registry: pypi
+  name: sema4ai-action-server
+  url: https://pypi.org/project/sema4ai-action-server/
+  install: pip install sema4ai-action-server
+  version: 3.2.0
+  official: true
+  description: Python framework that exposes your Python functions to AI agents both as an MCP server and an OpenAPI-compatible API.
+- language: python
+  registry: pypi
+  name: sema4ai-actions
+  url: https://pypi.org/project/sema4ai-actions/
+  install: pip install sema4ai-actions
+  official: true
+  description: Core library for authoring AI Actions with the @action decorator.
+- language: python
+  registry: pypi
+  name: sema4ai-mcp
+  url: https://pypi.org/project/sema4ai-mcp/
+  install: pip install sema4ai-mcp
+  version: 0.0.3
+  official: true
+  description: Library for implementing Model Context Protocol tools, resources, and prompts for the Sema4.ai Action Server.
+- language: cli
+  registry: homebrew
+  name: action-server
+  url: https://github.com/Sema4AI/homebrew-tools
+  install: brew install sema4ai/tools/action-server
+  official: true
+  description: Homebrew cask for the Action Server CLI binary (macOS).
+- language: typescript
+  registry: vscode-marketplace
+  name: sema4ai.sema4ai
+  url: https://marketplace.visualstudio.com/items?itemName=sema4ai.sema4ai
+  official: true
+  description: Sema4.ai VS Code extension for developing AI Actions and Agents in Python.

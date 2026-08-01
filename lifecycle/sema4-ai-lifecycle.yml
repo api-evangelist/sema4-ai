@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://sema4.ai/docs
+versioning:
+  scheme: uri-path
+  versions: [v1, v2]
+  current: v2
+  product_version: '2.5'
+  docs: https://sema4.ai/docs/v2/api
+  note: >-
+    Each deployment serves its own OpenAPI spec (GET /api/v2) describing the exact
+    contract of the version it runs. Work Item API is v1 (/api/v1/work-items).
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No public deprecation/Sunset-header policy documented.
+release_notes: https://sema4.ai/docs/release-notes
+editions:
+- Sema4.ai Enterprise Edition
+- Sema4.ai Team Edition for Snowflake (Snowflake Native App)
+self_host:
+  supported: true
+  docs: https://sema4.ai/docs/self-host
+  repo: https://github.com/Sema4AI/sema4ai-self-hosted
+status_page: null
+sla:
+  url: null

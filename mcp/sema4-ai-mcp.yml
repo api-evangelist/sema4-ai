@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://github.com/Sema4AI/actions + https://sema4.ai/docs/v2/api/mcp
+servers:
+- name: sema4ai-action-server
+  transport: http
+  endpoint: /mcp
+  description: >-
+    The Sema4.ai Action Server is itself an MCP server. Any package of Python
+    @action functions it hosts is exposed as MCP tools, resources, and prompts
+    at the /mcp endpoint (alongside the OpenAPI-compatible REST surface). Self-hosted
+    per deployment via `action-server start`.
+  package: sema4ai-action-server
+  library: sema4ai-mcp
+- name: sema4ai-platform-mcp
+  transport: http
+  endpoint: /api/v2/mcp
+  description: >-
+    The Sema4.ai platform REST API (v2) exposes an MCP endpoint for connecting
+    agents; the platform can also register and manage external MCP servers
+    (see /api/v2/mcp-servers).
+  docs: https://sema4.ai/docs/v2/api/mcp
+notes: >-
+  Sema4.ai treats MCP as a first-class surface: agents can consume remote MCP
+  servers, and the Action Server publishes actions as MCP tools. The gallery
+  (github.com/Sema4AI/gallery) ships prebuilt actions/agents usable over MCP.

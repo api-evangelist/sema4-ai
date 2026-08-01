@@ -1,8 +1,30 @@
 aid: sema4-ai
 name: Sema4 Ai
-description: Sema4 Ai is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sema4.ai is an enterprise AI agent company building a platform that lets
+  organizations design, run, and manage AI agents that combine actions,
+  intelligence, and enterprise context to transform knowledge work. Its
+  developer surface centers on AI Actions — Python functions exposed to agents
+  via the open-source Sema4.ai Action Server, which serves both an
+  OpenAPI-compatible REST API and a Model Context Protocol (MCP) server. The
+  platform adds a versioned REST API (v2) for driving agents, conversations,
+  Work Items, data connections, MCP servers, and audits programmatically, plus
+  Enterprise and Snowflake-native Team editions. Founded by the team behind
+  Robocorp, Sema4.ai is backed by Mayfield.
 url: https://raw.githubusercontent.com/api-evangelist/sema4-ai/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://sema4.ai/favicon.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +33,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- AI Agents
+- Automation
+- MCP
+- Enterprise AI
+- Actions
+- Python
+- Developer Tools
+apis:
+- name: Sema4.ai REST API
+  description: >-
+    The v2 REST API drives the Sema4.ai platform programmatically — list and
+    talk to agents, stream responses, queue and manage Work Items, read data
+    connections, manage MCP servers, and read audits. Each deployment serves its
+    own OpenAPI spec at GET /api/v2. Authenticated with a bearer API key.
+  humanURL: https://sema4.ai/docs/v2/api
+  baseURL: https://sema4.ai
+  properties:
+  - type: APIReference
+    url: https://sema4.ai/docs/v2/api
+  - type: Authentication
+    url: authentication/sema4-ai-authentication.yml
+  - type: Conventions
+    url: conventions/sema4-ai-conventions.yml
+  - type: ErrorCatalog
+    url: errors/sema4-ai-problem-types.yml
+  - type: DataModel
+    url: data-model/sema4-ai-data-model.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +72,64 @@ maintainers:
 common:
 - type: Website
   url: https://sema4.ai
+- type: DeveloperPortal
+  url: https://sema4.ai/docs
+- type: Documentation
+  url: https://sema4.ai/docs
+- type: APIReference
+  url: https://sema4.ai/docs/v2/api
+- type: GettingStarted
+  url: https://sema4.ai/docs
+- type: Blog
+  url: https://sema4.ai/blog/
+- type: Pricing
+  url: https://sema4.ai/pricing/
+- type: SignUp
+  url: https://sema4.ai/try-team-edition/
+- type: TermsOfService
+  url: https://sema4.ai/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://sema4.ai/privacy-policy/
+- type: Support
+  url: https://sema4.ai/contact-us/
+- type: GitHubOrganization
+  url: https://github.com/Sema4AI
+- type: Packages
+  url: packages/sema4-ai-packages.yml
+- type: SDKs
+  url: packages/sema4-ai-packages.yml
+- type: CLI
+  url: cli/sema4-ai-cli.yml
+- type: MCPServer
+  url: mcp/sema4-ai-mcp.yml
+- type: LLMsTxt
+  url: llms/sema4-ai-llms.txt
+- type: WellKnown
+  url: well-known/sema4-ai-well-known.yml
+- type: SecurityTxt
+  url: well-known/sema4-ai-security.txt
+- type: Authentication
+  url: authentication/sema4-ai-authentication.yml
+- type: Conventions
+  url: conventions/sema4-ai-conventions.yml
+- type: ErrorCatalog
+  url: errors/sema4-ai-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/sema4-ai-lifecycle.yml
+- type: ChangeLog
+  url: changelog/sema4-ai-changelog.yml
+- type: DataModel
+  url: data-model/sema4-ai-data-model.yml
+- type: Conformance
+  url: conformance/sema4-ai-conformance.yml
+- type: DomainSecurity
+  url: security/sema4-ai-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/sema4-ai-vulnerability-disclosure.yml
+- type: Security
+  url: https://sema4.ai/.well-known/responsible-disclosure-policy.html
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 15
+  pass: local-v1

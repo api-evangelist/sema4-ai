@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://sema4.ai/docs/v2/api
+note: >-
+  Entities enumerated from the documented v2 REST API resource groups. No public
+  OpenAPI file was available to harvest (the spec is served per deployment at GET
+  /api/v2), so relationships are described from the docs rather than derived from
+  $ref links.
+entities:
+- name: agent
+  path: /api/v2/agents
+  kinds: [conversational, worker]
+- name: conversation
+  path: /api/v2/agents/{agent}/conversations
+  belongs_to: agent
+- name: message
+  path: /api/v2/agents/{agent}/conversations/{conversation}/messages
+  belongs_to: conversation
+- name: work_item
+  path: /api/v1/work-items
+  id_prefix: wi_
+  belongs_to: agent
+- name: data_connection
+  path: /api/v2/data-connections
+- name: semantic_data_model
+  path: /api/v2/semantic-data-models
+- name: mcp_server
+  path: /api/v2/mcp-servers
+- name: api_key
+  path: /api/v2/api-keys
+- name: audit
+  path: /api/v2/audits
+- name: document_intelligence
+  path: /api/v2/document-intelligence
+- name: setting
+  path: /api/v2/settings
+- name: oidc
+  path: /api/v2/oidc

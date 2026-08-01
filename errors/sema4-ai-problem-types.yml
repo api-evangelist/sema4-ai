@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://sema4.ai/docs/work-item-api + https://sema4.ai/docs/v2/api
+format: http-status
+envelope:
+  note: >-
+    The API uses standard HTTP status codes to signal success/failure; error
+    responses may include an additional error object in the body. Not RFC 9457.
+problems:
+- status: 400
+  title: Bad Request
+  meaning: Malformed request, missing required parameters, or invalid status transition.
+- status: 401
+  title: Unauthorized
+  meaning: Authentication failed or the caller lacks permission for the operation.
+- status: 403
+  title: Forbidden
+  meaning: Request understood but refused; e.g. Work Items are disabled.
+- status: 404
+  title: Not Found
+  meaning: Resource not found; often an invalid Work Item ID or agent ID.
+- status: 412
+  title: Precondition Failed
+  meaning: Request cannot complete given the current state (invalid Work Item status transition).
+- status: 422
+  title: Unprocessable Entity
+  meaning: Well-formed request with semantic errors; payload does not meet expected format/content.
+- status: 500
+  title: Internal Server Error
+  meaning: Unexpected server condition.
+- status: 503
+  title: Service Unavailable
+  meaning: Server temporarily unavailable (overloaded or under maintenance).
+success_codes:
+- status: 200
+  meaning: Request succeeded; body contains requested data.
+- status: 201
+  meaning: Resource created (typically POST creating a Work Item).
+- status: 202
+  meaning: Accepted for processing (used by the MCP endpoint for notification-only input).
+- status: 204
+  meaning: Success with no content (often a status-update response).

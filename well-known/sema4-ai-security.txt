@@ -1,0 +1,5 @@
+Contact: mailto:security@sema4.ai
+Encryption: https://sema4.ai/.well-known/pgp.txt
+Preferred-Languages: en
+Policy: https://sema4.ai/.well-known/responsible-disclosure-policy.html
+Acknowledgements: https://robocorp.com/security-hall-of-fame
