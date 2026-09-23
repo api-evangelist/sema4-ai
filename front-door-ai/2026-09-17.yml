@@ -1,0 +1,32 @@
+# Front Door AI Index — sema4-ai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: sema4-ai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: sema4.ai
+  final_host: sema4.ai
+  ownership: own
+  owner: sema4-ai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 52
+  host_score: 52
+  density: 59.09
+  words: 880
+  tiers:
+    agentic: 20
+    core: 30
+    model: 2
+  ambiguous: 55
+  top_terms:
+    agent: 48
+    AI: 27
+    AI agent: 20
+    automation: 4
+    LLMs: 3
+    intelligence: 3
+    Bedrock: 1
+    OpenAI: 1
