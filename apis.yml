@@ -64,7 +64,6 @@ apis:
     connections, manage MCP servers, and read audits. Each deployment serves its
     own OpenAPI spec at GET /api/v2. Authenticated with a bearer API key.
   humanURL: https://sema4.ai/docs/v2/api
-  baseURL: https://sema4.ai
   properties:
   - type: APIReference
     url: https://sema4.ai/docs/v2/api
