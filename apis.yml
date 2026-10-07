@@ -81,6 +81,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/sema4-ai-plans-pricing.yml
 - type: Website
   url: https://sema4.ai
 - type: DeveloperPortal
