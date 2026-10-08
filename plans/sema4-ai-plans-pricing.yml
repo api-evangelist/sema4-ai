@@ -1,0 +1,35 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://sema4.ai/pricing/
+sources:
+- https://sema4.ai/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: Enterprise AI agent plans with no numeric prices; page describes consumption-based and optional
+  outcome-based pricing, all tiers 'Contact sales'.
+plan_count: 3
+plans:
+- name: Starter Pack
+  price_text: Contact sales
+  period: none
+  included_quota: Rapid deployment of your first use case; dedicated time from a deployment engineer
+- name: Departmental
+  price_text: Contact sales
+  period: none
+  included_quota: Unlimited users, agents, and connections; 1 Work Room; 2 departmental admin seats; SSO
+    integration
+- name: Enterprise
+  price_text: Contact sales
+  period: none
+  included_quota: Unlimited users, agents, and connections; 10 Work Rooms; 2 enterprise admin seats; 5
+    departmental admin seats; SSO integration; cross departmental knowledge sharing
